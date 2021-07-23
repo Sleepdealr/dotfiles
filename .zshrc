@@ -13,9 +13,9 @@ bindkey "^[[1;5D" backward-word
 source ~/.zsh/aliases.zsh
 source ~/.zsh/scripts.zsh
 
-#for file in ~/.zsh/plugins/*.zsh; do
-#    source "$file"
-#done
+for file in ~/.zsh/plugins/*.zsh; do
+    source "$file"
+done
 
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme

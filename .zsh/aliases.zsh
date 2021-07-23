@@ -62,4 +62,8 @@ alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
 alias yta-wav="youtube-dl --extract-audio --audio-format wav "
 alias ytv-best="youtube-dl -f bestvideo+bestaudio "
 
-
+alias ..="cd .."
+alias {..2,...}="cd ../.."
+alias {..3,....}="cd ../../.."
+alias {..4,.....}="cd ../../../.."
+alias {..5,......}="cd ../../../../.."
