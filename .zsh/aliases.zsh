@@ -5,6 +5,8 @@ alias path='echo $PATH | tr -s ":" "\n"'
 alias yolo='git commit -m "lol good luck"'
 alias vim="nvim"
 alias {btm,stats}="btm -l --color nord --battery"
+alias lg="lazygit"
+
 
 alias ez="$EDITOR ~/.zshrc"
 alias sz="source ~/.zshrc"     
@@ -32,7 +34,6 @@ alias ps="pacman -Ss"
 alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
-
 # confirm before overwriting something
 alias cp="cp -i"
 alias mv='mv -i'
@@ -67,3 +68,4 @@ alias {..2,...}="cd ../.."
 alias {..3,....}="cd ../../.."
 alias {..4,.....}="cd ../../../.."
 alias {..5,......}="cd ../../../../.."
+alias ~="cd ~"
