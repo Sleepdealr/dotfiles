@@ -258,5 +258,10 @@ return packer.startup(
                 "Git"
             }
         }
+        
+        use {
+          "kdheepak/lazygit.nvim"
+        }
+
     end
 )
