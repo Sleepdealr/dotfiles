@@ -17,7 +17,7 @@ source $ZSH_DIR/scripts.zsh
 source $ZSH_DIR/nnn.zsh
 
 
-for file in $ZSH_LOC/plugins/*.zsh; do
+for file in $ZSH_DIR/plugins/*.zsh; do
     source "$file"
 done
 
