@@ -10,13 +10,18 @@ export EDITOR=nvim
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-source ~/.zsh/aliases.zsh
-source ~/.zsh/scripts.zsh
+export ZSH_DIR='/home/sleep/.config/zsh'
 
-for file in ~/.zsh/plugins/*.zsh; do
+source $ZSH_DIR/aliases.zsh
+source $ZSH_DIR/scripts.zsh
+source $ZSH_DIR/nnn.zsh
+
+
+for file in $ZSH_LOC/plugins/*.zsh; do
     source "$file"
 done
 
+eval "$(jump shell)"
 
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
