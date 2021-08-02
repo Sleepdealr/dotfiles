@@ -1,4 +1,5 @@
 alias ff="fastfetch"           
+alias ffgay="fastfetch | lolcat"
 alias uwu="uwufetch"
 alias clr="clear"
 alias path='echo $PATH | tr -s ":" "\n"'
@@ -21,8 +22,6 @@ alias doc="cd ~/Documents"
 
 # pacman and yay
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
-alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
-alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
 alias parsua='paru -Sua --noconfirm'             # update only AUR pkgs (paru)
 alias parsyu='paru -Syu --noconfirm'             # update standard pkgs and AUR pkgs (paru)
 alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
