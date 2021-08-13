@@ -14,12 +14,12 @@ export ZSH_DIR='/home/sleep/.config/zsh'
 
 source $ZSH_DIR/aliases.zsh
 source $ZSH_DIR/scripts.zsh
-source $ZSH_DIR/nnn.zsh
-
 
 for file in $ZSH_DIR/plugins/*.zsh; do
     source "$file"
 done
+
+source $ZSH_DIR/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 eval "$(jump shell)"
 
@@ -28,3 +28,4 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme

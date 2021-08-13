@@ -7,6 +7,9 @@ alias yolo='git commit -m "lol good luck"'
 alias vim="nvim"
 alias {btm,stats}="btm -l --color nord --battery"
 alias lg="lazygit"
+alias rmf="rm -rf "
+alias cmatrix="cmatrix -a -b -C green"
+alias gaymatrix="cmatrix -a -b | lolcat"
 
 
 alias ez="$EDITOR ~/.zshrc"
@@ -14,10 +17,14 @@ alias sz="source ~/.zshrc"
 alias ea="$EDITOR ~/.config/alacritty/alacritty.yml"
 alias eal="$EDITOR $ZSH_DIR/aliases.zsh"
 alias ev="$EDITOR ~/.config/nvim/init.vim"
+alias ex="$EDITOR ~/.xinitrc"
+alias exm="$EDITOR ~/.xmonad/xmonad.hs"
+alias exbar="$EDITOR ~/.config/xmobar/"
+
 
 alias v="nvim"
 alias e="exit"
-alias cz="cd ~/.zsh"
+alias cz="cd ~/.config/zsh"
 alias doc="cd ~/Documents"
 
 # pacman and yay
