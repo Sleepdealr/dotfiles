@@ -6,7 +6,16 @@ end
 ts_config.setup {
     ensure_installed = {
         "bash",
-        "lua"
+        "lua",
+        "rust",
+        "toml",
+        "zig",
+        "java",
+        "javascript",
+        "devicetree",
+        "c",
+        "cpp",
+        "cmake"
     },
     highlight = {
         enable = true,

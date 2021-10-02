@@ -11,21 +11,19 @@ alias rmf="rm -rf "
 alias cmatrix="cmatrix -a -b -C green"
 alias gaymatrix="cmatrix -a -b | lolcat"
 
-
 alias ez="$EDITOR ~/.zshrc"
 alias sz="source ~/.zshrc"     
 alias ea="$EDITOR ~/.config/alacritty/alacritty.yml"
 alias eal="$EDITOR $ZSH_DIR/aliases.zsh"
 alias ev="$EDITOR ~/.config/nvim/init.vim"
 alias ex="$EDITOR ~/.xinitrc"
-alias exm="$EDITOR ~/.xmonad/xmonad.hs"
-alias exbar="$EDITOR ~/.config/xmobar/"
-
 
 alias v="nvim"
 alias e="exit"
 alias cz="cd ~/.config/zsh"
 alias doc="cd ~/Documents"
+alias down="cd ~/Downloads"
+alias htop="btop"
 
 # pacman and yay
 alias pacsyu='sudo pacman -Syyu'                 # update only standard pkgs
@@ -45,12 +43,19 @@ alias cp="cp -i"
 alias mv='mv -i'
 alias rm='rm -i'
 
+alias maimwin="maim -u -i $(xdotool getactivewindow) | xclip -selection clipboard -t image/png"
+alias colorpick="maim -st 0 | convert - -resize 1x1\! -format '%[pixel:p{0,0}]' info:-"
+
 #changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first --icons' # my preferred listing
 alias la='exa -al --color=always --group-directories-first --icons'  # all files and dirs
 alias ll='exa -l --color=always --group-directories-first --icons'  # long format
 alias lt='exa -aT --color=always --group-directories-first --icons' # tree listing
 alias l.='exa -a | egrep "^\."'
+
+#FZF-ify everything
+#alias vf="vim $(fzf)"
+#alias printfuz="find * -type f | fzf > selected"
 
 # get fastest mirrors
 alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"

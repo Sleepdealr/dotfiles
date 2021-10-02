@@ -4,8 +4,11 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+export PATH=$PATH:$HOME/.dwm/
 
+export BROWSER=google-chrome-stable
 export EDITOR=nvim
+export TERM=alacritty 
 
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
